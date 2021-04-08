@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "128uayhst-18au7-8u76-298716-5ea8035hue876",
+      "title": "Web Development with Rails",
+      "author": "Marc Webb, Dave Thomas",
+      "categories": "Web development",
+      "year": "2010",
+      "edition": "4th Edition",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": "4c92egdr-43al9-16tg-981636-5e1c035dyetga",
+      "title": "React.js & Node.js",
+      "author": "Sam Raimi, Thomas Parker",
+      "categories": "Web development",
+      "year": "2011",
+      "edition": "3rd Edition",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  ]
+}
