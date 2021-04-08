@@ -18,18 +18,18 @@ const ActionButton = (props) => {
     return (
         <>
             <Link to={`/view/${id}`}>
-                <Button variant="outline-primary" className="mr-2">
+                <Button variant="outline-primary" className="mr-2 mb-2">
                     <i className="fas fa-eye mr-2"/>
                     View
                 </Button>
             </Link>
             <Link to={`/${id}`}>
-                <Button variant="outline-primary" className="mr-2">
+                <Button variant="outline-primary" className="mr-2 mb-2">
                     <i className="fas fa-edit mr-2"/>
                     Edit
                 </Button>
             </Link>
-            <Button variant="outline-danger" onClick={handleShow}>
+            <Button variant="outline-danger" onClick={handleShow} className="mr-2 mb-2">
                 <i className="fas fa-trash-alt mr-2"/>
                 Delete
             </Button>

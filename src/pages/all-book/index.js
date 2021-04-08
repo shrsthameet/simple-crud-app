@@ -41,7 +41,7 @@ const Index = ({allBookLists}) => {
                     error ? (
                         <AlertBox alertMsg="Something went wrong. Please try again later." alertVariant="danger"/>
                     ) : data.length ? (
-                        <Table striped bordered hover>
+                        <Table striped bordered hover responsive>
                             <TableHeader/>
                             <TableBody allBookLists={data}/>
                         </Table>

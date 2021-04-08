@@ -10,8 +10,10 @@ import EditForm from "../../components/editBook/editForm";
 import Loader from "../../reusableComponents/Loader";
 import AlertBox from "../../reusableComponents/AlertBox";
 import {editBook} from "../../api/editBook";
+import {useFormStyles} from "../../components/editBook/formStyles";
 
 const Index = ({fetchBookById, bookById, updateBook}) => {
+    const classes = useFormStyles();
     let history = useHistory();
     let {id} = useParams();
     const {isLoading, data, error} = bookById;
@@ -24,8 +26,8 @@ const Index = ({fetchBookById, bookById, updateBook}) => {
             <Row>
                 <BackButton/>
             </Row>
-            <Row className="justify-content-md-center">
-                <Col xs="10" sm="10" md="6" lg="6" style={{border: "1px solid #dcdcdc", padding: 40, borderRadius: 12}}>
+            <Row className="justify-content-center">
+                <Col xs="10" sm="10" md="6" lg="6" className={classes.formSection}>
                     {isLoading ? (<Loader title="Loading. Please wait."/>) : (
                         <>
                             {error && <AlertBox alertMsg={error} alertVariant="danger"/>}

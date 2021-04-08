@@ -13,8 +13,10 @@ import {addNewBook} from "../../api/addNewBook";
 import Loader from "../../reusableComponents/Loader";
 import AlertBox from "../../reusableComponents/AlertBox";
 import {useHistory} from "react-router-dom";
+import {useFormStyles} from "../../components/editBook/formStyles";
 
 const Index = (props) => {
+    const classes = useFormStyles();
     const history = useHistory();
     const {postNewBook, newBookResponse} = props;
     const [title, bindTitle, resetTitle] = useInput("");
@@ -49,8 +51,8 @@ const Index = (props) => {
             <Row>
                 <BackButton/>
             </Row>
-            <Row className="justify-content-md-center">
-                <Col xs="10" sm="10" md="6" lg="6" style={{border: "1px solid #dcdcdc", padding: 40, borderRadius: 12}}>
+            <Row className="justify-content-center">
+                <Col xs="10" sm="10" md="6" lg="6" className={classes.formSection}>
                     {newBookResponse.isLoading ? (
                         <Loader title="Creating a new book. Please Wait.."/>
                     ) : (
